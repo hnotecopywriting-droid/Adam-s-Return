@@ -1,0 +1,14 @@
+# --- H-Note Creative Custom Filters ---
+
+# Ignore heavy 4K video renders and raw footage [cite: 1, 9]
+*.mp4
+*.mov
+*.avi
+*.wmv
+
+# Ignore large image sequences or temporary frame renders [cite: 11, 12]
+/temp_frames/
+/renders/
+
+# Ignore local environment variables (API keys for TTS voices) [cite: 3]
+.env
