@@ -51,12 +51,12 @@ def weave_video(audio_path):
     
     print("Rendering Adam-s-Return in 4K... Hold the frequency.")
     # This part takes a moment—let the machine breathe while it works.
-    final_video.write_videofile("Adam_Return_Broadcast.mp4", fps=24, codec="libx264")
+    final_video.write_videofile("assets/Adam_Final_Vessel.mp4", fps=24, codec="libx264")
 
 if __name__ == "__main__":
     if check_frequency():
         audio_file = generate_voiceover("video_script.txt")
         weave_video(audio_file)
-        print("\n--- Mission Complete: The Vessel 'Adam_Return_Broadcast.mp4' is ready ---")
+        print("\n--- Mission Complete: The Vessel 'assets/Adam_Final_Vessel.mp4' is ready ---")
     else:
         print("Check your folder structure.")
